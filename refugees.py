@@ -156,35 +156,35 @@ def main():
         """
         <style>
         .main {
-            background-color: black;
-            color: white !important;
+            background-color: white;
+            color: black !important;
         }
         .stButton > button {
-            color: white;
+            color: black;
             background-color: transparent;
             border: 1px solid white;
         }
         .stButton > button:hover {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
         }
         .stRadio > label {
-            color: white !important;
+            color: black !important;
         }
         .stMarkdown {
-            color: white !important;
+            color: black !important;
         }
         .stTitle {
-            color: white !important;
+            color: black !important;
         }
         .stHeader {
-            color: white !important;
+            color: black !important;
         }
         div[data-testid="stMetricValue"] {
-            color: white !important;
+            color: black !important;
         }
         div[data-testid="stMetricLabel"] {
-            color: white !important;
+            color: black !important;
         }
         .stSidebar {
             background-color: black;
