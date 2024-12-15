@@ -155,106 +155,35 @@ def main():
     st.markdown(
         """
         <style>
-        .main {
-            background-color: white;
-            color: black !important;
+        /* 메인 영역 스타일 */
+        .stApp {
+            background-color: white; /* 배경 흰색 */
+            color: black !important; /* 텍스트 검은색 */
         }
+
+        /* 버튼 스타일 */
         .stButton > button {
             color: black;
             background-color: transparent;
-            border: 1px solid white;
+            border: 1px solid black;
         }
         .stButton > button:hover {
             color: white;
             background-color: black;
         }
-        .stRadio > label {
-            color: black !important;
-        }
-        .stMarkdown {
-            color: black !important;
-        }
-        .stTitle {
-            color: black !important;
-        }
-        .stHeader {
-            color: black !important;
-        }
-        div[data-testid="stMetricValue"] {
-            color: black !important;
-        }
-        div[data-testid="stMetricLabel"] {
-            color: black !important;
-        }
-        .stSidebar {
-            background-color: black;
-        }
-        .stSidebar [data-testid="stMarkdown"] {
-            color: white !important;
-        }
-        .stSidebar [data-testid="stHeader"] {
-            color: white !important;
-        }
-        .stSidebar [data-testid="stMetricValue"] {
-            color: white !important;
-        }
-        .stSidebar [data-testid="stMetricLabel"] {
-            color: white !important;
-        }
-        /* 추가된 스타일 */
-        p {
-            color: white !important;
-        }
-        h1, h2, h3 {
-            color: white !important;
-        }
-        .stRadio label span {
-            color: white !important;
-        }
-        div[data-baseweb="radio"] {
-            color: white !important;
-        }
-        .element-container {
-            color: white !important;
-        }
-        /* 사이드바 스타일 수정 */
+        
+        /* 사이드바 스타일 */
         section[data-testid="stSidebar"] {
-            background-color: black !important;
+            background-color: black !important; /* 배경을 검은색으로 설정 */
         }
-        section[data-testid="stSidebar"] > div {
-            background-color: black !important;
-        }
-        section[data-testid="stSidebar"] .stMarkdown {
-            color: white !important;
-        }
-        /* 기본 버튼 스타일 */
-        .stButton > button {
-            color: white;
-            background-color: transparent;
-            border: 1px solid white;
-        }
-        
-        /* 일반 버튼 호버 효과 */
-        .stButton > button:hover {
-            color: black;
-            background-color: white;
-        }
-        
-        /* 선택완료 버튼 스타일 */
-        button[kind="secondary"] {
-            color: orange !important;
-        }
-        
-        /* 선택완료 버튼 호버 효과 */
-        button[kind="secondary"]:hover {
-            color: black !important;
-            background-color: orange !important;
-            border-color: orange !important;
+        section[data-testid="stSidebar"] * {
+            color: white !important; /* 사이드바 내 모든 텍스트를 흰색으로 설정 */
         }
         </style>
         """,
         unsafe_allow_html=True
     )
+    
     init_session_state()
     show_game()
 
